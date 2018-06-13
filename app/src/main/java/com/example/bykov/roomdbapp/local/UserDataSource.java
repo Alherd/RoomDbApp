@@ -40,13 +40,15 @@ public class UserDataSource implements IUserDataSource {
     }
 
     @Override
-    public void insertUser(@NotNull User user) {
-        userDAO.insertUser(user);
+    public void insertUser(User... users) {
+        userDAO.insertUser(users);
+
     }
 
     @Override
-    public void updateUser(@NotNull User user) {
-        userDAO.updateUser(user);
+    public void updateUser(User... users) {
+        userDAO.updateUser(users);
+
     }
 
     @Override
@@ -57,5 +59,6 @@ public class UserDataSource implements IUserDataSource {
     @Override
     public void deleteAllUsers() {
         userDAO.deleteAllUsers();
+
     }
 }
