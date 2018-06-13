@@ -1,7 +1,6 @@
-package com.example.bykov.roomdbapp;
+package com.example.bykov.roomdbapp.activities;
 
 import android.content.DialogInterface;
-import android.database.Observable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +16,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.bykov.roomdbapp.R;
 import com.example.bykov.roomdbapp.database.UserRepository;
 import com.example.bykov.roomdbapp.local.UserDataSource;
 import com.example.bykov.roomdbapp.local.UserDatabase;
@@ -28,7 +28,6 @@ import java.util.UUID;
 
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
-import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
